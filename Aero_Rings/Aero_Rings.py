@@ -4,8 +4,8 @@ pygame.init()
 
 #setup game
 pygame.display.set_caption('Aero rings')
-pygame.display.set_icon(pygame.image.load("Aero_rings/img/planeStill.png"))
-background = pygame.image.load("Aero_rings/img/eveningSkyBG.png")
+pygame.display.set_icon(pygame.image.load("img/planeStill.png"))
+background = pygame.image.load("img/eveningSkyBG.png")
 size = (1280,720)
 background = pygame.transform.scale(background, size)
 screen = pygame.display.set_mode(size)
@@ -20,10 +20,10 @@ clock = pygame.time.Clock()
 
 
 #Buttons
-pauseButton = pygame.image.load("Aero_rings/img/pause.png")
-continueButton = pygame.image.load("Aero_rings/img/continue.png")
-musicOn = pygame.image.load("Aero_rings/img/musicOn.png")
-musicOff = pygame.image.load("Aero_rings/img/musicOff.png")
+pauseButton = pygame.image.load("img/pause.png")
+continueButton = pygame.image.load("img/continue.png")
+musicOn = pygame.image.load("img/musicOn.png")
+musicOff = pygame.image.load("img/musicOff.png")
 pauseButton = pygame.transform.scale(pauseButton, (80,80))
 continueButton = pygame.transform.scale(continueButton, (80,80))
 musicOn = pygame.transform.scale(musicOn, (80,80))
@@ -52,18 +52,18 @@ panels = 3 #middle + left and right ones
 
 
 #pictures for animation
-planeStill = pygame.image.load("Aero_rings/img/planeStill.png")
+planeStill = pygame.image.load("img/planeStill.png")
 planeStill = pygame.transform.scale(planeStill, (172,56))
-planeUp = pygame.image.load("Aero_rings/img/planeUp.png")
+planeUp = pygame.image.load("img/planeUp.png")
 planeUp = pygame.transform.scale(planeUp, (172,64))
-planeDown = pygame.image.load("Aero_rings/img/planeDown.png")
+planeDown = pygame.image.load("img/planeDown.png")
 planeDown = pygame.transform.scale(planeDown, (172,72))
 plane = planeStill
 plane_rect = plane.get_rect()
 x, y = 150, 300
 plane_rect[0], plane_rect[1] = x, y
 
-ring = pygame.image.load("Aero_rings/img/pointRing.png")
+ring = pygame.image.load("img/pointRing.png")
 ring = pygame.transform.scale(ring, (90,200)) 
 ring_rect = ring.get_rect()
 ring_rect.x,ring_rect.y = random.randrange(1300,1500),random.randrange(150,450)
@@ -77,9 +77,9 @@ pause_text = font_big.render(f"GAME PAUSED", True, (255,255,255))
 to_unpause_text = font.render("Click anywhere to unpause the game",True, (255,255,255))
 
 #music and sounds
-pygame.mixer.music.load("Aero_rings/aud/Cipher-KevinMacleod.mp3")
+pygame.mixer.music.load("aud/Cipher-KevinMacleod.mp3")
 pygame.mixer.music.play(-1)
-ringsound = pygame.mixer.Sound("Aero_rings/aud/RingCollect.mp3")
+ringsound = pygame.mixer.Sound("aud/RingCollect.mp3")
 sounds = 1
 music = 1
 
