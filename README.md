@@ -8,4 +8,4 @@ a - move the plane to the left
 s - move the plane downwards
 d - move the plane to the right
 
-b - turn on the bot for autoplay, disables other controls, pause and music off/on buttons still work
+b - turn on/off the bot for autoplay, disables other controls, pause and music off/on buttons still work
