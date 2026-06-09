@@ -1,6 +1,5 @@
 # aero_rings_pygame
-Sort of a game made by me as a project for programming lessons
-Game files should be contained in the Aero_Rings directory for them to work properly.
+Sort of a game made by me as a project for programming lessons.
 
 Controls:
 w - move the plane upwards
